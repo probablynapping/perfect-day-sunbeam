@@ -12,7 +12,7 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    background: azure;
+    background: #d4ecf6;
     color: purple;
     
 }
@@ -26,4 +26,43 @@
 
     font-family: 'Arial';
     font-size: 16px;
+}
+
+.store1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* to hide elements
+.hidden {
+    display: none !important;
+} */
+
+.customer1 img {
+    width: 180px;
+    height: auto;
+}
+
+.drink {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid purple;
+    text-align: center;
+}
+
+.button-group button, #serve-btn, #reset-btn {
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 6px;
+    border: 1px solid purple;
+    cursor: pointer;
+    background: #fff;
+}
+
+#serve-btn {
+    background: purple;
+    color: white;
 }

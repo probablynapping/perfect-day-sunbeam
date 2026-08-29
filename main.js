@@ -1,6 +1,14 @@
+//hidden stuff
+makeDrink.style.display = 'none';
+document.getElementById("counterTop").style.display = "none";
+document.getElementById("game-screen").style.display = "none";
+
+
+
 // 1. Store your story lines in an array
 const storyLines = [
     //sunray
+  "Let's Have a Perfect Day at work!",
   "You will be a cashier at a convenience store today.",
   "Your job is to get thru all the customers and complete your shift without trouble!",
   "Good luck~",
@@ -26,7 +34,19 @@ nextButton.addEventListener("click", () => {
   // Optional: Disable button when reaching the end
   if (currentLineIndex >= storyLines.length) {
     nextButton.disabled = true;
-    nextButton.textContent = "End";
+    // nextButton.textContent = "Okay";
+    nextButton.style.display = 'none';
+
+    makeDrink.style.display = 'block';
   }
+});
+
+
+
+makeDrink.addEventListener("click", () => {
+  document.getElementById('frontDoor').remove();
+  document.getElementById("counterTop").style.display = "";
+  makeDrink.style.display = 'none';
+  document.getElementById("game-screen").style.display = "";
 });
 
