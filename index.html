@@ -16,7 +16,7 @@
             <img src = "https://sunbeam.hackclub.com/imgs/ray1.webp" alt = "Sunray"> 
 
             <div class="dialogue-box">
-                <p id="speaker">Sunray</p>
+                <p id="speaker">Sunray: </p>
                 <p id="dialogue-text">Hello there!</p>
                 <button id="next-btn">Next</button>
                 <button id="makeDrink">Make the Drink!</button>
@@ -31,27 +31,27 @@
         <div class="counter">
 
             <div class="customer1_counterTop">
-                <img src = "https://sunbeam.hackclub.com/imgs/shark1.webp" alt="Customer">
+                <img id = "customer1" src = "https://sunbeam.hackclub.com/imgs/shark1.webp" alt="Customer">
                 <img id = "counterTop" src = "https://media.discordapp.net/attachments/1543300148895944845/1543377117192921148/Screenshot_2026-08-29_at_2.49.34_PM.png?ex=6a94a573&is=6a9353f3&hm=b8166714df30b4379c5f4b8a358c727febc8ede54b8e8c6425e29a2c4780fe75&=&format=webp&quality=lossless">
             </div>
 
-            <div class="drink maker">
-                <h3> Drinks! </h3>
-                <p> Click on the drink! </p>
+            <div class="drink-maker">
+                <h3> Drink Making Station </h3>
+                <p> Click on the drink to add it to the cup! </p>
 
                 <!-- copied -->
                 <div class="button-group">
 
-                    <button class="ingredient-btn" data-item="Milk">🥛 </button>
-                    <button class="ingredient-btn" data-item="Coke Alcohol"> 🍺 Pour Coke</button>
-                    <button class="ingredient-btn" data-item="Fish">🐠 Add Lemon</button>
-                    <button class="ingredient-btn" data-item="Fizzy Water">🫗 Add Fizzy Water</button>
+                    <button class="ingredient-btn" data-item="Milk">🥛 Pour Milk</button>
+                    <button class="ingredient-btn" data-item="Alcohol"> 🍺 Pour Alcohol</button>
+                    <button class="ingredient-btn" data-item="Fish">🐠 Fish</button>
+                    <button class="ingredient-btn" data-item="Fizzy Water">🫧 Pour Fizzy Water</button>
 
                 </div>
                 <div class="current-drink">
-                    <p>Current Cup: <span id="cup-contents">Empty</span></p>
+                    <h4>Current Cup: <span id="cup-contents">Empty</span></h4>
                     <button id="serve-btn">Serve Drink</button>
-                    <button id="reset-btn">Trash Cup</button>
+                    <button id="reset-btn"> 🫗 Dump Drink on Floor :O (reset cup) </button>
                 </div>
             </div>
 

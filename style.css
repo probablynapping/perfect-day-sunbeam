@@ -25,7 +25,12 @@
     flex-grow: 1;
 
     font-family: 'Arial';
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.dialogue-box #speaker {
+    color: royalblue;
+    font-size: 25px;
 }
 
 .store1 {
@@ -45,12 +50,7 @@
   gap: 15px;
 }
 
-.customer1_counterTop img {
-  width: 50%;
-  height: auto;
-}
-
-.drink {
+.drink-maker{
     background: white;
     padding: 20px;
     border-radius: 12px;

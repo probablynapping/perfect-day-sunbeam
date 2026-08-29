@@ -5,26 +5,27 @@ document.getElementById("game-screen").style.display = "none";
 
 
 
-// 1. Store your story lines in an array
+//stingray lines
 const storyLines = [
     //sunray
   "Let's Have a Perfect Day at work!",
-  "You will be a cashier at a convenience store today.",
-  "Your job is to get thru all the customers and complete your shift without trouble!",
-  "Good luck~",
+  "You will be a cashier at a convenience store at Sunbeam beach today. Your job is to get thru all the customers and complete your shift without trouble!",
+  "Why does a stingray like me have legs you ask?",
+  "Well, you have legs too so you can't be the one to judge.",
+  "Anyway, good luck~",
 
     //customer 1
-    "Your first customer is here. She would like a coke please."
+    "Your first customer, the Dolphin is here. She would like a coke please."
 ];
 
-// 2. Track the current line index
 let currentLineIndex = 0;
 
-// 3. Select the DOM elements
+
 const dialogueText = document.getElementById("dialogue-text");
 const nextButton = document.getElementById("next-btn");
 
-// 4. Update the text when the button is clicked
+
+
 nextButton.addEventListener("click", () => {
   if (currentLineIndex < storyLines.length) {
     dialogueText.textContent = storyLines[currentLineIndex];
@@ -71,7 +72,18 @@ document.getElementById("serve-btn").addEventListener('click', () => {
     alert('The cup is empty!');
     return;
   }
-  alert(`Served: ${currentIngredients.join(', ')}!`);
+  
   currentIngredients = [];
-  cupContents.textContent = 'Empty';
+  document.getElementById("cup-contents").textContent = "Empty";
+
+  //show end day page
+  document.getElementById("counterTop").style.display = "none";
+  document.getElementById("game-screen").style.display = "none";
+  dialogueText.textContent = "You finished your day perfectly. Good job!";
+  
+});
+
+document.getElementById("reset-btn").addEventListener("click", () => {
+  currentIngredients = [] //empty ingredients array
+  document.getElementById("cup-contents").textContent = "Empty";
 });
