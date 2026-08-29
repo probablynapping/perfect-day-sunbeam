@@ -56,13 +56,22 @@ let currentIngredients = [];
 
 document.querySelectorAll('.ingredient-btn').forEach( button =>{
   button.addEventListener('click', () => {
-    // Get item name from data-item attribute
+    // add name to contents
     const item = button.dataset.item;
     
-    // Add item to array
+    // add to array
     currentIngredients.push(item);
 
-    // Update display text
     document.getElementById('cup-contents').textContent = currentIngredients.join(', ');
   });
+});
+
+document.getElementById("serve-btn").addEventListener('click', () => {
+  if (currentIngredients.length === 0) {
+    alert('The cup is empty!');
+    return;
+  }
+  alert(`Served: ${currentIngredients.join(', ')}!`);
+  currentIngredients = [];
+  cupContents.textContent = 'Empty';
 });
