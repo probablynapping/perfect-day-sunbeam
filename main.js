@@ -15,7 +15,7 @@ const storyLines = [
   "Anyway, good luck~",
 
     //customer 1
-    "Your first customer, the Dolphin is here. She would like a coke please."
+    "Your first customer, the Dolphin is here. She would like a coke please. Try your best to make it!"
 ];
 
 let currentLineIndex = 0;
