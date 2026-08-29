@@ -14,7 +14,7 @@ const storyLines = [
   "Good luck~",
 
     //customer 1
-    "Good morning. I would like a coke please."
+    "Your first customer is here. She would like a coke please."
 ];
 
 // 2. Track the current line index
@@ -50,3 +50,19 @@ makeDrink.addEventListener("click", () => {
   document.getElementById("game-screen").style.display = "";
 });
 
+
+//drink making interface 
+let currentIngredients = [];
+
+document.querySelectorAll('.ingredient-btn').forEach( button =>{
+  button.addEventListener('click', () => {
+    // Get item name from data-item attribute
+    const item = button.dataset.item;
+    
+    // Add item to array
+    currentIngredients.push(item);
+
+    // Update display text
+    document.getElementById('cup-contents').textContent = currentIngredients.join(', ');
+  });
+});

@@ -40,9 +40,14 @@
     display: none !important;
 } */
 
-.customer1 img {
-    width: 180px;
-    height: auto;
+.customer1_counterTop {
+  display: flex;
+  gap: 15px;
+}
+
+.customer1_counterTop img {
+  width: 50%;
+  height: auto;
 }
 
 .drink {
